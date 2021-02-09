@@ -42,7 +42,7 @@ model.add(Convolution2D(
     kernel_size=5,
     strides=1,
     padding='same',     # Padding method
-    data_format='channels_first',
+    data_format='channels_first', # if you use tensorflow backend, change 'channels_first' to 'channels_last'
 ))
 model.add(Activation('relu'))
 
